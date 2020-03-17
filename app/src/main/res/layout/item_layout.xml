@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="12dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="8dp"
+    android:paddingTop="20dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ImageAcceuil"
+        android:layout_width="104dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:civ_border_color="@color/colorBlueESIEA"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="@color/Transparent" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ImageAcceuil"
+        android:layout_alignLeft="@+id/ImageAcceuil"
+        android:layout_alignRight="@+id/ImageAcceuil"
+        android:layout_alignStart="@+id/ImageAcceuil"
+        android:layout_below="@+id/ImageAcceuil"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/cambo"
+        android:gravity="center"
+        android:paddingLeft="4px"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textPoste"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textLoc"
+        android:layout_alignLeft="@+id/textLoc"
+        android:layout_alignRight="@+id/textLoc"
+        android:layout_alignStart="@+id/textLoc"
+        android:layout_below="@+id/textLoc"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/antic_slab"
+        android:gravity="center"
+        android:paddingLeft="4px"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="10sp"
+        app:fontFamily="@font/antic_slab" />
+
+    <TextView
+        android:id="@+id/textMail"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textPoste"
+        android:layout_alignLeft="@+id/textPoste"
+        android:layout_alignRight="@+id/textPoste"
+        android:layout_alignStart="@+id/textPoste"
+        android:layout_below="@+id/textPoste"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/anaheim"
+        android:gravity="center"
+        android:text=""
+        android:textSize="8sp"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/textLoc"
+        android:layout_width="79dp"
+        android:layout_height="11dp"
+        android:layout_alignEnd="@+id/textName"
+        android:layout_alignLeft="@+id/textName"
+        android:layout_alignRight="@+id/textName"
+        android:layout_alignStart="@+id/textName"
+        android:layout_below="@+id/textName"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/antic_slab"
+        android:gravity="center"
+        android:text=""
+        android:textSize="8sp" />
+
+
+</RelativeLayout>

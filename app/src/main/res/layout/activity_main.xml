@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity"
+    android:orientation="vertical"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/loginbackground">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:padding="10dp"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/adresse_email_ESIEA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Adresse email ESIEA"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-light"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textCursorDrawable="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"/>
+
+    <EditText
+        android:id="@+id/mot_de_passe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:inputType="textPassword"
+        android:hint="Mot de passe"
+        android:ems="10"
+        android:padding="8dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-light"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="10dp"
+        android:textCursorDrawable="@null"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Se souvenir de moi"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:buttonTint="#fff"/>
+
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_login"
+        android:text="Se connecter"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlueESIEA"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        style="@style/TextAppearance.AppCompat.Body1"/>
+
+    <!-- Mot de passe oublié (trop compliqué à mettre en place)
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe oublié"
+        android:clickable="true"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#fff"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"/>
+    -->
+
+</LinearLayout>
