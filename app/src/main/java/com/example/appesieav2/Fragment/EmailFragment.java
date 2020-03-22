@@ -14,16 +14,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class EDTFragment extends Fragment {
+public class EmailFragment extends Fragment {
 
     private WebView webView;
 
-    @Nullable
-    @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.edt_fragment,container,false);
+
+        View view = inflater.inflate(R.layout.email_fragment,container,false);
         webView = (WebView) view.findViewById(R.id.webview);
-        webView.loadUrl("https://edt.esiea.fr/mobile.etudiant?&redirect=1");
+        webView.loadUrl("https://outlook.office.com/mail/inbox");
 
         // Enable Javascript
         WebSettings webSettings = webView.getSettings();
@@ -35,4 +34,5 @@ public class EDTFragment extends Fragment {
         return view;
 
     }
+
 }

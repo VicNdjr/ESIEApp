@@ -12,6 +12,7 @@ import android.view.MenuItem;
 
 import com.example.appesieav2.Fragment.CalendrierFragment;
 import com.example.appesieav2.Fragment.EDTFragment;
+import com.example.appesieav2.Fragment.EmailFragment;
 import com.example.appesieav2.Fragment.OrganigrammeFragment;
 import com.example.appesieav2.Fragment.ProgrammeFragment;
 import com.example.appesieav2.R;
@@ -71,6 +72,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.pedagogie:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ProgrammeFragment()).commit();
+                break;
+            case R.id.email:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new EmailFragment()).commit();
                 break;
         }
 
